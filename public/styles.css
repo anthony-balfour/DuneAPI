@@ -1,0 +1,131 @@
+/* Anthony Balfour
+5/18/2023
+Section AF
+TA: Donovan Jordan Kong
+    Sonia Saitawdekar
+
+This page contains styling for the index.html page. There is a navbar at the top
+of the page colored teal. There are 3 clickable images of the first 3 Dune books on the
+landing page. The next section is a Contact Me Form.
+*/
+
+/* page/body/overall styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', 'Roboto', sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* nav styling */
+
+nav {
+  width: 100%;
+  background-color: rgb(14, 122, 122);
+  height: 5rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 16px;
+  background-color: inherit;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+nav ul li a:hover {
+  background-color: rgb(142, 161, 157);
+}
+
+ul > li, ol > li {
+  list-style: none;
+}
+
+/* Dune Styling */
+
+#dune-section img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.dune-synopsis {
+  width: 60%;
+  line-height: 1.5;
+}
+
+/* Form Styling */
+
+#form-container form {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 40%;
+  height: 30%;
+  padding: 5em;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+#form-container form div {
+  justify-content: space-between;
+  width: 80%;
+}
+
+form > label:nth-child(2) {
+  width: 80%;
+}
+
+#comments-questions {
+  width: 100%;
+  height: 10rem;
+}
+
+#firstName, #lastName {
+  width: 250px;
+}
+
+#email {
+  width: 250px;
+}
+
+input {
+  margin-top: 5px;
+  display: block;
+}
+
+h2 {
+  align-self: flex-start;
+  margin-left: 26%;
+}

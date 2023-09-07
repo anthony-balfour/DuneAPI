@@ -1,0 +1,53 @@
+<!--
+  Anthony Balfour
+  5/18/2023
+  Section AF
+  TA: Donovan Jordan Kong, Sonia Saitawdekar
+
+  This page, index.html, contains the html format of the CP4. There is a section
+  which holds a form for user information and a section for the first 3 Dune series books.
+  There is a navbar at the top with links to each respective section.
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>CP4</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#dune-section">Dune</a></li>
+          <li><a href="#form-container">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="dune-section" class="flex column">
+      <div class="flex">
+        <img src="dune-images/dune-paul.jpg" alt="dune cover" id="dune">
+        <img src="dune-images/messiah-notext.jpg" alt="dune messiah cover" id="messiah">
+        <img src="dune-images/children.jpg" alt="children of dune cover" id="children">
+      </div>
+    </section>
+    <section id="form-container" class="flex column">
+      <h2>Contact Me</h2>
+      <form class="flex column">
+        <div class="flex">
+          <label>First:<input type="text" id="first-name" name="first-name" required></label>
+          <label>Last:<input type="text" id="last-name" name="last-name" ></label>
+        </div>
+        <label>Comments/Questions:
+          <input type="text" id="comments-questions" name="comments-questions" >
+        </label>
+        <label>Email:<input type="text" id="email" name="email" ></label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
