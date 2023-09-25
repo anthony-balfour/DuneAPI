@@ -86,6 +86,15 @@
     id("form-container").appendChild(paragraph);
   }
 
+
+/**
+ * Moves books that are not clicked to the side and highlights the clicked
+ * book
+ */
+  function moveOtherBooks() {
+    
+  }
+
   /**
    * Finds the element with the specified selector
    *
