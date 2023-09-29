@@ -29,6 +29,9 @@
     });
     qsa("img").forEach(img => {
       img.addEventListener("click", duneInfo);
+      img.addEventListener("click", (event) => {
+        moveOtherBooks(event);
+      };
     });
   }
 
@@ -90,9 +93,16 @@
 /**
  * Moves books that are not clicked to the side and highlights the clicked
  * book
+ * @param {event} event - click event on book
  */
-  function moveOtherBooks() {
-    
+  function moveOtherBooks(event) {
+    const currentBookID = event.currentTarget.id;
+
+    // dune book chosen
+    if (currentBookID == "messiah") {
+      id("dune").classList.add("move-left");
+      id("children").classList.add("move-right");
+    }
   }
 
   /**
