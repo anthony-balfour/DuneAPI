@@ -84,6 +84,14 @@ ul > li, ol > li {
 .dune-synopsis {
   width: 60%;
   line-height: 1.5;
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: translateY(1.6rem);
+}
+
+.move-up {
+  transform: translateY(0);
+  visibility: visible;
 }
 
 /* Form Styling */
@@ -128,4 +136,16 @@ input {
 h2 {
   align-self: flex-start;
   margin-left: 26%;
+}
+
+/* Moving Books onClick */
+
+.move-left {
+  transform: translateX(-5vw);
+  transition: all 0.5s;
+}
+
+.move-right {
+  transform: translateX(5vw);
+  transition: all 0.5s;
 }

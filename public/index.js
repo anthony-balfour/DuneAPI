@@ -74,7 +74,7 @@
     }
     let paragraph = generate("p");
     paragraph.textContent = res.synopsis;
-    paragraph.classList.add("dune-synopsis");
+    paragraph.classList.add("dune-synopsis move-up");
     id("dune-section").appendChild(paragraph);
   }
 
