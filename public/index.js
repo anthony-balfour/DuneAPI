@@ -102,6 +102,11 @@
     if (currentBookID == "messiah") {
       id("dune").classList.add("move-left");
       id("children").classList.add("move-right");
+    } else if (currentBookID == "dune") {
+      id("messiah").classList.add("move-right");
+      id("children").classList.add("move-right");
+    } else if(currentBookID == "children") {
+      
     }
   }
 
